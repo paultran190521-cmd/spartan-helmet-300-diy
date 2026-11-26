@@ -1,0 +1,18 @@
+# Large video files (GitHub max file size is 100MB)
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+*.tmp
+.vscode/
+.idea/

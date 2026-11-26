@@ -1,0 +1,409 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2100" width="100%" height="100%" style="background:#0b1120; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <pattern id="grid3d" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.8"/>
+    </pattern>
+    <linearGradient id="bronzeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eab308" />
+      <stop offset="50%" stop-color="#b45309" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+    <linearGradient id="cardboardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4a373" />
+      <stop offset="100%" stop-color="#bc6c25" />
+    </linearGradient>
+    <linearGradient id="redPlume" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#991b1b" />
+      <stop offset="70%" stop-color="#dc2626" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#ff9500" />
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#38bdf8" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#0b1120" />
+  <rect width="100%" height="100%" fill="url(#grid3d)" opacity="0.5" />
+
+  <!-- HEADER -->
+  <g id="header-3d" transform="translate(50, 40)">
+    <rect width="1500" height="100" rx="8" fill="#1e293b" stroke="#ff9500" stroke-width="2.5" />
+    <text x="30" y="44" fill="#ff9500" font-size="28" font-weight="900" letter-spacing="1">MÔ HÌNH PHỐI CẢNH 3D &amp; HƯỚNG DẪN GHÉP NỐI MŨ CHIẾN BINH SPARTA</text>
+    <text x="30" y="78" fill="#94a3b8" font-size="16">Sơ đồ bung chi tiết (Exploded View) • 4 giai đoạn lắp ráp tuần tự • Thành phẩm 3D hoàn chỉnh sau khi bồi giấy &amp; sơn giả cổ</text>
+  </g>
+
+  <!-- ==================== KHU VỰC 1: SƠ ĐỒ BUNG CHI TIẾT 3D (EXPLODED VIEW) ==================== -->
+  <g id="sec-exploded" transform="translate(50, 170)">
+    <rect width="1500" height="720" rx="8" fill="#111827" stroke="#334155" stroke-width="2" />
+    
+    <rect x="25" y="20" width="1450" height="40" rx="4" fill="#1e293b" />
+    <text x="45" y="47" fill="#38bdf8" font-size="18" font-weight="bold">PHẦN I: SƠ ĐỒ BUNG KHÔNG GIAN 3D (EXPLODED ASSEMBLY VIEW) - HƯỚNG GHÉP CỦA TỪNG BỘ PHẬN</text>
+
+    <!-- Exploded Illustration Container -->
+    <!-- Center reference head position: cx=750, cy=440 -->
+
+    <!-- 1. CREST PLUME (Bờm lông) - Exploded UPWARDS -->
+    <g transform="translate(700, 90)">
+      <!-- Red Plume bristles -->
+      <path d="M 50 140 
+               C 50 50, 120 10, 240 10 
+               C 210 50, 200 90, 200 140 
+               Z" fill="url(#redPlume)" opacity="0.9" stroke="#b91c1c" stroke-width="2" />
+      <!-- Crest box (Hộp mào) -->
+      <path d="M 40 150 
+               C 40 100, 100 80, 210 80 
+               L 205 130 
+               C 120 130, 60 140, 45 155 Z" fill="url(#cardboardGrad)" stroke="#78350f" stroke-width="2" />
+      <text x="130" y="60" fill="#f87171" font-size="14" font-weight="bold" text-anchor="middle">BỜM LÔNG &amp; KHUNG MÀO</text>
+      <!-- Down arrow to dome -->
+      <line x1="130" y1="165" x2="130" y2="230" stroke="#ff9500" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arrowOrange)" />
+      <text x="145" y="205" fill="#ff9500" font-size="13" font-weight="bold">Bắn keo dán dọc sống đỉnh sọ</text>
+    </g>
+
+    <!-- 2. DOME LEFT & RIGHT (Hai nửa vòm chóp nón) - Exploded SIDEWAYS -->
+    <!-- Left Dome Half -->
+    <g transform="translate(360, 290)">
+      <path d="M 240 80 
+               C 160 80, 80 140, 60 230 
+               C 100 270, 200 270, 250 240 
+               Z" fill="url(#cardboardGrad)" stroke="#78350f" stroke-width="2.5" opacity="0.95" />
+      <!-- Dart slits -->
+      <line x1="100" y1="210" x2="150" y2="150" stroke="#0f172a" stroke-width="2" />
+      <line x1="160" y1="130" x2="200" y2="180" stroke="#0f172a" stroke-width="2" />
+      <text x="150" y="295" fill="#38bdf8" font-size="14" font-weight="bold" text-anchor="middle">VÒM SỌ NỬA TRÁI</text>
+      <!-- Arrow to center seam -->
+      <line x1="255" y1="180" x2="360" y2="180" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arrowBlue)" />
+    </g>
+
+    <!-- Right Dome Half -->
+    <g transform="translate(860, 290)">
+      <path d="M 40 80 
+               C 120 80, 200 140, 220 230 
+               C 180 270, 80 270, 30 240 
+               Z" fill="url(#cardboardGrad)" stroke="#78350f" stroke-width="2.5" opacity="0.95" />
+      <!-- Dart slits -->
+      <line x1="180" y1="210" x2="130" y2="150" stroke="#0f172a" stroke-width="2" />
+      <line x1="120" y1="130" x2="80" y2="180" stroke="#0f172a" stroke-width="2" />
+      <text x="130" y="295" fill="#38bdf8" font-size="14" font-weight="bold" text-anchor="middle">VÒM SỌ NỬA PHẢI</text>
+      <!-- Arrow to center seam -->
+      <line x1="25" y1="180" x2="-80" y2="180" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arrowBlue)" />
+    </g>
+
+    <!-- Center Line Indicator -->
+    <text x="740" y="470" fill="#f8fafc" font-size="13" font-weight="bold" text-anchor="middle">ĐƯỜNG MÍ GHÉP SỐNG GIỮA ĐỈNH ĐẦU</text>
+
+    <!-- 3. FACE SHIELD (Mặt nạ trước) - Exploded FORWARD -->
+    <g transform="translate(630, 470)">
+      <!-- 3D Perspective Faceplate -->
+      <path d="M 20 40 
+               Q 110 30 200 40 
+               L 190 120 
+               L 210 150 
+               L 165 250 
+               L 125 210 
+               L 115 160 
+               L 110 165 
+               L 105 180 
+               L 95 165 
+               L 85 160 
+               L 75 210 
+               L 35 250 
+               L -10 150 
+               L 10 120 Z" 
+            fill="url(#cardboardGrad)" stroke="#78350f" stroke-width="2.5" />
+      <!-- Eye Holes -->
+      <polygon points="35,95 85,80 85,105 35,120" fill="#0b1120" stroke="#334155" stroke-width="2" />
+      <polygon points="115,80 165,95 165,120 115,105" fill="#0b1120" stroke="#334155" stroke-width="2" />
+      <!-- Nose center fold line -->
+      <line x1="100" y1="35" x2="105" y2="180" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="4,2" />
+      <text x="100" y="275" fill="#fb923c" font-size="15" font-weight="bold" text-anchor="middle">MẶT NẠ GIÁP TRƯỚC (GẬP CHỮ V 110°)</text>
+      <!-- Upward-backward assembly arrow -->
+      <line x1="100" y1="25" x2="100" y2="-50" stroke="#ff9500" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arrowOrange)" />
+      <text x="115" y="-15" fill="#ff9500" font-size="13" font-weight="bold">Dán mép trán vào chân trước vòm sọ</text>
+    </g>
+
+    <!-- 4. REAR NECK FLARE (Vành loe sau gáy) - Exploded BACKWARDS -->
+    <g transform="translate(140, 540)">
+      <path d="M 30 70 
+               C 90 20, 190 20, 250 70 
+               C 190 50, 90 50, 30 70 Z" 
+            fill="url(#cardboardGrad)" stroke="#10b981" stroke-width="2" />
+      <text x="140" y="105" fill="#34d399" font-size="13" font-weight="bold" text-anchor="middle">VÀNH LOE GÁY</text>
+      <!-- Arrow to back -->
+      <line x1="255" y1="55" x2="380" y2="30" stroke="#10b981" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowOrange)" />
+      <text x="310" y="70" fill="#34d399" font-size="12">Dán quanh gáy</text>
+    </g>
+
+    <!-- Legend note -->
+    <rect x="1140" y="610" width="320" height="90" rx="6" fill="#0f172a" stroke="#ff9500" stroke-width="1.5" />
+    <text x="1155" y="635" fill="#ff9500" font-size="13" font-weight="bold">GHI CHÚ HƯỚNG LẮP RÁP:</text>
+    <text x="1155" y="660" fill="#cbd5e1" font-size="12">➔ Mũi tên cam: Vị trí dán keo nến cố định</text>
+    <text x="1155" y="682" fill="#cbd5e1" font-size="12">➔ Mũi tên xanh: Mép khép sống giữa đỉnh nón</text>
+  </g>
+
+  <!-- ==================== KHU VỰC 2: 4 BƯỚC GHÉP NỐI THỰC TẾ ==================== -->
+  <g id="sec-steps" transform="translate(50, 920)">
+    <rect width="1500" height="580" rx="8" fill="#111827" stroke="#334155" stroke-width="2" />
+
+    <rect x="25" y="20" width="1450" height="40" rx="4" fill="#1e293b" />
+    <text x="45" y="47" fill="#fb923c" font-size="18" font-weight="bold">PHẦN II: 4 BƯỚC GHÉP NỐI CHI TIẾT THEO TIẾN TRÌNH THỰC TẾ TRONG VIDEO</text>
+
+    <!-- STEP 1: GHÉP CHỎM SỌ -->
+    <g transform="translate(35, 80)">
+      <rect width="335" height="470" rx="6" fill="#0f172a" stroke="#1992b0" stroke-width="1.5" />
+      <rect x="15" y="15" width="305" height="32" rx="4" fill="#1992b0" opacity="0.2" />
+      <text x="25" y="37" fill="#38bdf8" font-size="14" font-weight="bold">BƯỚC 1: KHÉP DART &amp; GHÉP SỌ</text>
+      
+      <!-- Graphic Step 1 -->
+      <g transform="translate(25, 60)">
+        <!-- Flat to 3D dome half -->
+        <ellipse cx="140" cy="80" rx="110" ry="60" fill="url(#cardboardGrad)" opacity="0.3" stroke="#94a3b8" stroke-dasharray="3,3" />
+        <!-- Curved 3D dome joined -->
+        <path d="M 40 100 
+                 C 40 30, 240 30, 240 100 
+                 C 200 130, 80 130, 40 100 Z" fill="url(#cardboardGrad)" stroke="#78350f" stroke-width="2" />
+        <line x1="140" y1="30" x2="140" y2="120" stroke="#ff9500" stroke-width="2.5" />
+        <text x="140" y="20" fill="#ff9500" font-size="12" font-weight="bold" text-anchor="middle">SỐNG GIỮA ĐỈNH ĐẦU</text>
+        <circle cx="90" cy="70" r="4" fill="#ef4444" />
+        <circle cx="190" cy="70" r="4" fill="#ef4444" />
+        <text x="140" y="150" fill="#38bdf8" font-size="12" text-anchor="middle">3 khe xẻ khép kín &amp; dán băng keo</text>
+      </g>
+
+      <!-- Details List -->
+      <g transform="translate(20, 240)">
+        <text x="0" y="20" fill="#f8fafc" font-size="13" font-weight="bold">Thao tác then chốt:</text>
+        <text x="0" y="45" fill="#cbd5e1" font-size="12">• Miết cong nhẹ 2 mảnh bìa theo thớ sóng.</text>
+        <text x="0" y="70" fill="#cbd5e1" font-size="12">• Kéo mép 3 khe xẻ (Darts) khít vào nhau.</text>
+        <text x="0" y="95" fill="#cbd5e1" font-size="12">• Dán băng dính giấy giữ cố định mặt ngoài.</text>
+        <text x="0" y="120" fill="#cbd5e1" font-size="12">• Bơm keo nến thật dày vào rãnh mặt trong.</text>
+        <text x="0" y="145" fill="#cbd5e1" font-size="12">• Nối 2 nửa vòm lại dọc đường sống giữa.</text>
+        <rect x="0" y="165" width="295" height="45" rx="4" fill="#1e293b" />
+        <text x="10" y="192" fill="#34d399" font-size="12" font-weight="bold">✔ Đạt được: Quả cầu bán elip khít đầu</text>
+      </g>
+    </g>
+
+    <!-- STEP 2: RÁP MẶT NẠ GIÁP TRƯỚC -->
+    <g transform="translate(395, 80)">
+      <rect width="335" height="470" rx="6" fill="#0f172a" stroke="#ff9500" stroke-width="1.5" />
+      <rect x="15" y="15" width="305" height="32" rx="4" fill="#ff9500" opacity="0.2" />
+      <text x="25" y="37" fill="#fb923c" font-size="14" font-weight="bold">BƯỚC 2: RÁP MẶT NẠ &amp; MÁ 3D</text>
+
+      <!-- Graphic Step 2 -->
+      <g transform="translate(45, 60)">
+        <!-- Dome upper -->
+        <path d="M 40 70 C 40 20, 200 20, 200 70 Z" fill="#475569" opacity="0.6" />
+        <!-- Face attached -->
+        <path d="M 40 70 
+                 L 190 70 
+                 L 175 140 
+                 L 150 180 
+                 L 120 145 
+                 L 115 155 
+                 L 85 180 
+                 L 60 140 Z" fill="url(#cardboardGrad)" stroke="#78350f" stroke-width="2" />
+        <!-- Eye Slits -->
+        <polygon points="60,85 100,75 100,95 60,105" fill="#0b1120" stroke="#f8fafc" stroke-width="1.5" />
+        <polygon points="135,75 175,85 175,105 135,95" fill="#0b1120" stroke="#f8fafc" stroke-width="1.5" />
+        <line x1="117" y1="70" x2="117" y2="150" stroke="#ff9500" stroke-width="2" stroke-dasharray="3,2" />
+        <text x="117" y="15" fill="#fb923c" font-size="12" font-weight="bold" text-anchor="middle">Mép nối trán &amp; chóp sọ</text>
+      </g>
+
+      <!-- Details List -->
+      <g transform="translate(20, 240)">
+        <text x="0" y="20" fill="#f8fafc" font-size="13" font-weight="bold">Thao tác then chốt:</text>
+        <text x="0" y="45" fill="#cbd5e1" font-size="12">• Bẻ gập sống mũi chữ T góc V ~110°.</text>
+        <text x="0" y="70" fill="#cbd5e1" font-size="12">• Bơm keo nến mép trán gắn vào chân vòm.</text>
+        <text x="0" y="95" fill="#cbd5e1" font-size="12">• Uốn cong 2 cánh má ôm vát quai hàm.</text>
+        <text x="0" y="120" fill="#cbd5e1" font-size="12">• Cắt lớp bìa viền má thứ 2 dán đè lên ngoài.</text>
+        <text x="0" y="145" fill="#cbd5e1" font-size="12">• Đảm bảo tâm 2 hốc mắt ngang mắt người đội.</text>
+        <rect x="0" y="165" width="295" height="45" rx="4" fill="#1e293b" />
+        <text x="10" y="192" fill="#34d399" font-size="12" font-weight="bold">✔ Đạt được: Diện mạo Sparta đặc trưng</text>
+      </g>
+    </g>
+
+    <!-- STEP 3: VÀNH GÁY & KHUNG MÀO -->
+    <g transform="translate(755, 80)">
+      <rect width="335" height="470" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1.5" />
+      <rect x="15" y="15" width="305" height="32" rx="4" fill="#10b981" opacity="0.2" />
+      <text x="25" y="37" fill="#34d399" font-size="14" font-weight="bold">BƯỚC 3: VÀNH GÁY &amp; KHUNG MÀO</text>
+
+      <!-- Graphic Step 3 -->
+      <g transform="translate(45, 55)">
+        <!-- Helmet Side Profile -->
+        <path d="M 30 110 C 30 40, 160 30, 180 80 L 195 130 L 170 170 L 130 120 L 70 120 Z" fill="#475569" opacity="0.6" />
+        <!-- Crest box mounted on top -->
+        <path d="M 25 110 C 40 40, 140 20, 195 80 L 190 50 C 130 0, 35 20, 20 80 Z" fill="url(#cardboardGrad)" stroke="#78350f" stroke-width="2" />
+        <!-- Spacers -->
+        <rect x="40" y="55" width="12" height="15" fill="#ff9500" />
+        <rect x="100" y="30" width="12" height="15" fill="#ff9500" />
+        <rect x="160" y="45" width="12" height="15" fill="#ff9500" />
+        <!-- Neck Flare attached -->
+        <path d="M 30 110 C 20 125, 10 135, 5 145 C 20 140, 40 125, 45 120 Z" fill="url(#cardboardGrad)" stroke="#10b981" stroke-width="2" />
+        <text x="110" y="15" fill="#34d399" font-size="12" font-weight="bold" text-anchor="middle">Rãnh cắm lông rộng 3.5 cm</text>
+      </g>
+
+      <!-- Details List -->
+      <g transform="translate(20, 240)">
+        <text x="0" y="20" fill="#f8fafc" font-size="13" font-weight="bold">Thao tác then chốt:</text>
+        <text x="0" y="45" fill="#cbd5e1" font-size="12">• Dán dải vành loe sau gáy dọc chân nón.</text>
+        <text x="0" y="70" fill="#cbd5e1" font-size="12">• Ghép 2 thành mào với 3 miếng đệm vuông.</text>
+        <text x="0" y="95" fill="#cbd5e1" font-size="12">• Uốn lượn đáy mào áp sát sống đỉnh nón.</text>
+        <text x="0" y="120" fill="#cbd5e1" font-size="12">• Bắn ngập keo nến liên kết chân mào với sọ.</text>
+        <text x="0" y="145" fill="#cbd5e1" font-size="12">• Kiểm tra độ thẳng hàng trục dọc nón.</text>
+        <rect x="0" y="165" width="295" height="45" rx="4" fill="#1e293b" />
+        <text x="10" y="192" fill="#34d399" font-size="12" font-weight="bold">✔ Đạt được: Khung mũ thô hoàn thiện 100%</text>
+      </g>
+    </g>
+
+    <!-- STEP 4: BỜM LÔNG & SƠN GIẢ CỔ -->
+    <g transform="translate(1115, 80)">
+      <rect width="350" height="470" rx="6" fill="#0f172a" stroke="#ec4899" stroke-width="1.5" />
+      <rect x="15" y="15" width="320" height="32" rx="4" fill="#ec4899" opacity="0.2" />
+      <text x="25" y="37" fill="#f472b6" font-size="14" font-weight="bold">BƯỚC 4: BỒI BÁO &amp; SƠN ĐỒNG CỔ</text>
+
+      <!-- Graphic Step 4 -->
+      <g transform="translate(50, 50)">
+        <!-- Plume attached -->
+        <path d="M 25 90 C 35 30, 120 0, 195 50 C 185 20, 110 -10, 15 60 Z" fill="url(#redPlume)" stroke="#b91c1c" stroke-width="1.5" />
+        <!-- Helmet Finished in Bronze -->
+        <path d="M 25 95 C 40 45, 150 40, 175 80 L 190 120 L 165 160 L 125 125 L 65 125 Z" fill="url(#bronzeGrad)" stroke="#451a03" stroke-width="2" />
+        <!-- Battle scars -->
+        <line x1="80" y1="90" x2="95" y2="105" stroke="#0f172a" stroke-width="2" />
+        <line x1="140" y1="95" x2="160" y2="110" stroke="#0f172a" stroke-width="2" />
+        <text x="105" y="175" fill="#f472b6" font-size="12" font-weight="bold" text-anchor="middle">Ánh kim loại đồng cổ xưa</text>
+      </g>
+
+      <!-- Details List -->
+      <g transform="translate(20, 240)">
+        <text x="0" y="20" fill="#f8fafc" font-size="13" font-weight="bold">Thao tác then chốt:</text>
+        <text x="0" y="45" fill="#cbd5e1" font-size="12">• Cắt cước chổi đỏ thành từng bó 10-12 cm.</text>
+        <text x="0" y="70" fill="#cbd5e1" font-size="12">• Bơm keo cắm cước dựng đứng kín khe mào.</text>
+        <text x="0" y="95" fill="#cbd5e1" font-size="12">• Bồi 1-2 lớp giấy báo pha keo sữa PVA.</text>
+        <text x="0" y="120" fill="#cbd5e1" font-size="12">• Sơn lót xịt đen nhám (Matte Black) toàn bộ.</text>
+        <text x="0" y="145" fill="#cbd5e1" font-size="12">• Quét cọ khô (Dry-brush) Acrylic Vàng Đồng.</text>
+        <rect x="0" y="165" width="310" height="45" rx="4" fill="#1e293b" />
+        <text x="10" y="192" fill="#34d399" font-size="12" font-weight="bold">✔ Hoàn thành: Tác phẩm giáp Sparta đỉnh cao</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== KHU VỰC 3: THÀNH PHẨM HOÀN CHỈNH 3D ==================== -->
+  <g id="sec-finished" transform="translate(50, 1530)">
+    <rect width="1500" height="520" rx="8" fill="#111827" stroke="#eab308" stroke-width="2" />
+    
+    <rect x="25" y="20" width="1450" height="40" rx="4" fill="#1e293b" />
+    <text x="45" y="47" fill="#facc15" font-size="18" font-weight="bold">PHẦN III: HÌNH ẢNH PHỐI CẢNH 3D THÀNH PHẨM HOÀN CHỈNH TỪ 3 GÓC NHÌN ĐẶC TRƯNG</text>
+
+    <!-- VIEW 1: GÓC NGHIÊNG 3/4 CHIẾN BINH (HERO VIEW) -->
+    <g transform="translate(60, 90)">
+      <rect width="420" height="400" rx="6" fill="#0b1120" stroke="#334155" stroke-width="1.5" />
+      <text x="210" y="35" fill="#38bdf8" font-size="15" font-weight="bold" text-anchor="middle">1. GÓC NGHIÊNG 3/4 CHIẾN TRẬN</text>
+
+      <!-- Drawing Perspective 3/4 -->
+      <g transform="translate(90, 70)">
+        <!-- Plume -->
+        <path d="M 40 100 
+                 C 45 20, 150 -10, 240 60 
+                 C 220 20, 140 -20, 30 70 Z" fill="url(#redPlume)" stroke="#991b1b" stroke-width="2" />
+        <!-- Crest box -->
+        <path d="M 35 110 C 45 40, 140 20, 220 80 L 210 50 C 130 0, 40 25, 25 90 Z" fill="#78350f" stroke="#451a03" stroke-width="2" />
+        <!-- Dome -->
+        <path d="M 40 115 
+                 C 55 45, 175 50, 210 110 
+                 C 190 145, 80 145, 40 115 Z" fill="url(#bronzeGrad)" stroke="#451a03" stroke-width="2" />
+        <!-- Faceplate -->
+        <path d="M 45 115 
+                 L 190 110 
+                 L 175 185 
+                 L 195 210 
+                 L 155 285 
+                 L 115 240 
+                 L 105 190 
+                 L 95 195 
+                 L 80 230 
+                 L 40 270 
+                 L 15 195 Z" fill="url(#bronzeGrad)" stroke="#451a03" stroke-width="2.5" />
+        <!-- Left Eye -->
+        <polygon points="50,150 95,135 95,160 50,175" fill="#0b1120" stroke="#facc15" stroke-width="1.5" />
+        <!-- Right Eye -->
+        <polygon points="120,135 165,150 165,175 120,160" fill="#0b1120" stroke="#facc15" stroke-width="1.5" />
+        <!-- Nose Ridge -->
+        <line x1="107" y1="110" x2="100" y2="200" stroke="#fde047" stroke-width="2.5" />
+        <!-- Neck Flare -->
+        <path d="M 40 120 C 25 140, 10 155, 0 170 C 15 160, 35 145, 40 135 Z" fill="#78350f" stroke="#451a03" stroke-width="2" />
+      </g>
+      <text x="210" y="380" fill="#94a3b8" font-size="12" text-anchor="middle">Tỉ lệ chuẩn tôn vinh góc cạnh nam tính &amp; dũng mãnh</text>
+    </g>
+
+    <!-- VIEW 2: GÓC CHÍNH DIỆN TRỰC DIỆN (FRONT VIEW) -->
+    <g transform="translate(540, 90)">
+      <rect width="420" height="400" rx="6" fill="#0b1120" stroke="#334155" stroke-width="1.5" />
+      <text x="210" y="35" fill="#38bdf8" font-size="15" font-weight="bold" text-anchor="middle">2. GÓC CHÍNH DIỆN (TRỰC DIỆN MẶT)</text>
+
+      <g transform="translate(100, 70)">
+        <!-- Plume front thin fan -->
+        <path d="M 95 90 C 80 20, 130 20, 115 90 Z" fill="url(#redPlume)" stroke="#991b1b" stroke-width="2" />
+        <!-- Crest box front -->
+        <rect x="92" y="85" width="26" height="25" fill="#78350f" stroke="#451a03" stroke-width="2" />
+        <!-- Dome front curve -->
+        <path d="M 15 110 C 15 50, 195 50, 195 110 Z" fill="url(#bronzeGrad)" stroke="#451a03" stroke-width="2" />
+        <!-- Faceplate symmetrical front -->
+        <path d="M 15 110 
+                 Q 105 105 195 110 
+                 L 185 190 
+                 L 205 215 
+                 L 165 290 
+                 L 125 245 
+                 L 115 195 
+                 L 110 200 
+                 L 105 210 
+                 L 100 200 
+                 L 95 195 
+                 L 85 245 
+                 L 45 290 
+                 L 5 215 
+                 L 25 190 Z" fill="url(#bronzeGrad)" stroke="#451a03" stroke-width="2.5" />
+        <!-- Left Eye -->
+        <polygon points="35,150 85,135 85,160 35,175" fill="#0b1120" stroke="#facc15" stroke-width="1.5" />
+        <!-- Right Eye -->
+        <polygon points="125,135 175,150 175,175 125,160" fill="#0b1120" stroke="#facc15" stroke-width="1.5" />
+        <!-- Nose Ridge Line -->
+        <line x1="105" y1="108" x2="105" y2="210" stroke="#fde047" stroke-width="3" />
+      </g>
+      <text x="210" y="380" fill="#94a3b8" font-size="12" text-anchor="middle">Sống mũi chữ T &amp; 2 hốc mắt góc nhìn đe dọa kẻ thù</text>
+    </g>
+
+    <!-- VIEW 3: GÓC MẶT BÊN PROFILE (SIDE VIEW) -->
+    <g transform="translate(1020, 90)">
+      <rect width="420" height="400" rx="6" fill="#0b1120" stroke="#334155" stroke-width="1.5" />
+      <text x="210" y="35" fill="#38bdf8" font-size="15" font-weight="bold" text-anchor="middle">3. GÓC MẶT BÊN PROFILE (90°)</text>
+
+      <g transform="translate(90, 70)">
+        <!-- Plume Side Silhouette -->
+        <path d="M 20 120 C 35 20, 160 0, 240 80 C 220 30, 130 -15, 10 90 Z" fill="url(#redPlume)" stroke="#991b1b" stroke-width="2" />
+        <!-- Crest box Side -->
+        <path d="M 15 125 C 30 50, 140 25, 230 90 L 220 60 C 130 0, 30 25, 10 95 Z" fill="#78350f" stroke="#451a03" stroke-width="2" />
+        <!-- Dome side -->
+        <path d="M 20 125 C 30 55, 180 55, 205 125 Z" fill="url(#bronzeGrad)" stroke="#451a03" stroke-width="2" />
+        <!-- Face side profile -->
+        <path d="M 205 125 
+                 L 225 155 
+                 L 215 200 
+                 L 190 280 
+                 L 165 240 
+                 L 155 195 
+                 L 80 195 
+                 L 60 150 
+                 L 20 135 Z" fill="url(#bronzeGrad)" stroke="#451a03" stroke-width="2.5" />
+        <!-- Eye slit side -->
+        <polygon points="170,150 205,155 200,175 165,165" fill="#0b1120" stroke="#facc15" stroke-width="1.5" />
+        <!-- Neck Flare Side -->
+        <path d="M 20 135 C 5 155, -5 170, -15 185 C 5 175, 20 160, 25 145 Z" fill="#78350f" stroke="#451a03" stroke-width="2" />
+      </g>
+      <text x="210" y="380" fill="#94a3b8" font-size="12" text-anchor="middle">Đường cong vòm sọ &amp; vành gáy loe thoát khí êm ái</text>
+    </g>
+  </g>
+</svg>
